@@ -1,3 +1,6 @@
+// You can use the following file in combination with copy/pasting the html code in test.html (copy area should be 
+// clearly identified). 
+
 // This function creates an eventListener for the submit button on the new project form
 const getMapID = document.querySelector("#mapIDForm");
 getMapID.addEventListener('submit', async (e) => {
