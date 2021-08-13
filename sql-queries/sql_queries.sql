@@ -17,7 +17,8 @@ INSERT INTO `Maps` VALUES
     (5, "Pacific City Beach", "Pacific City", "Oregon", "https://www.openstreetmap.org/export/embed.html?bbox=-123.98455381393434%2C45.208014940432484%2C-123.95622968673707%2C45.221347171208436&amp;layer=mapnik", "https://www.openstreetmap.org/#map=16/45.2147/-123.9704"),
     (6, "Rockaway Beach", "Rockaway Beach", "Oregon", "https://www.openstreetmap.org/export/embed.html?bbox=-124.05418395996095%2C45.572836521464495%2C-123.82759094238283%2C45.67872055615951&amp;layer=mapnik", "https://www.openstreetmap.org/#map=13/45.6257/-123.9409"),
     (7, "Gearhart Beach", "Gearhart", "Oregon", "https://www.openstreetmap.org/export/embed.html?bbox=-123.97084236145021%2C46.00465287376907%2C-123.85754585266115%2C46.05721095297774&amp;layer=mapnik", "https://www.openstreetmap.org/#map=14/46.0310/-123.9142"),
-    (8, "Manzanita Beach", "Manzanita", "Oregon", "https://www.openstreetmap.org/export/embed.html?bbox=-123.96294593811037%2C45.70147388841269%2C-123.90629768371583%2C45.72790289199613&amp;layer=mapnik", "https://www.openstreetmap.org/#map=15/45.7147/-123.9346");
+    (8, "Manzanita Beach", "Manzanita", "Oregon", "https://www.openstreetmap.org/export/embed.html?bbox=-123.96294593811037%2C45.70147388841269%2C-123.90629768371583%2C45.72790289199613&amp;layer=mapnik", "https://www.openstreetmap.org/#map=15/45.7147/-123.9346"),
+    (9, "Oregon State University", "Corvallis", "Oregon", "https://www.openstreetmap.org/export/embed.html?bbox=-123.2996%2C44.5444%2C-123.2646%2C44.5822&amp;layer=mapnik", "https://www.openstreetmap.org/#map=15/44.5633/-123.2821");
 
 -- Query to get attributes from Maps table using mapID 
 SELECT name, city, state, src, href FROM Maps WHERE mapID = ?;

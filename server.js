@@ -35,6 +35,19 @@ app.get('/beach/:mapID', (req, res, next) => {
 
 });
 
+// Get Oregon State University map
+app.get('/oregon-state', (req, res, next) => {
+  let sql = 'SELECT name, city, state, src, href FROM Maps ' + 
+            'WHERE mapID = (SELECT mapID FROM Maps WHERE name="Oregon State University");'
+  mysql.pool.query(sql, [], function (err, results) {
+    if (err) {
+      next(err);
+      return;
+    }
+    res.json(results[0]);
+  });
+});
+
 //-----------------------------------------------------------------------------
 // ERROR handlers
 app.use(function (req, res) {
